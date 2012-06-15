@@ -103,16 +103,16 @@ class PokerHand
 end
 
 class Card
-	attr :rank, :suit
+  attr :rank, :suit
 
-	def initialize(rank, suit)
-		@rank, @suit = rank, suit
-	end
+  def initialize(rank, suit)
+    @rank, @suit = rank, suit
+  end
 
   def to_s
     "#@rank of #@suit"
   end
-	  
+    
   def self.create(str)
     suits = { 'S' => 'Spades', 'H' => 'Hearts', 'C' => 'Clubs', 'D' => 'Diamonds' }
     ranks = { 'T' => 10, 'J' => 11, 'Q' => 12, 'K' => 13, 'A' => 14 }
